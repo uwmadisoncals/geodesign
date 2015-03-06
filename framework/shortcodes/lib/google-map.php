@@ -53,6 +53,8 @@ function vntd_gmap($atts, $content = null) {
 			zoom: <?php echo $zoom; ?>,
 			center: latlng,
 			mapTypeId: google.maps.MapTypeId.SATELLITE,
+			disableDefaultUI: true,
+			scrollwheel: false
 		};
 
 		var map = new google.maps.Map(document.getElementById('google-map'), myOptions);
